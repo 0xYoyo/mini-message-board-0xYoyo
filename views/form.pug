@@ -1,0 +1,13 @@
+extends layout 
+
+block content
+    h1 New Message
+    form(action="/new", method="post")
+        ul 
+            li 
+                label(for="authorName") Name:
+                input(type="text" name="authorName" id="authorName")
+            li 
+                label(for="messageText") Message:
+                input(type="text" name="messageText" id="messageText")
+            button(type="submit") Submit
